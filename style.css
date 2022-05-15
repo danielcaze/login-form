@@ -12,6 +12,7 @@
     --text-base: #afb6c2;
     --text-title: #d4ccb6;
     --background: #191816;
+    --submit-color: #473404;
     --form-background: #24221f;
     --primary-color: #ffc632;
     --border: #868686;
@@ -201,56 +202,6 @@ form svg path {
     height: 2rem;
 }
 
-
-
-
-/* #rememberChk {
-    opacity: 1;
-    width: 2rem;
-    height: 2rem;
-}
-
-#rememberChk + label {
-    position: relative;
-    cursor: pointer;
-    display: inline-block;
-
-    font-family: "Roboto", sans-serif;
-    height: 1.9rem;
-    width: 8.2rem;
-}
-
-#rememberChk + label::before {
-    content: "";
-    position: absolute;
-    
-    top: 10rem;
-    left: -2.4rem;
-
-    width: 2rem;
-    height: 2rem;
-
-    border-radius: .4rem;
-    outline: 1px solid var(--border);
-    background-color: var(--background);
-}
-
-
-#rememberChk:checked + label::before {
-    content: "";
-    position: absolute;
-
-    left: -2.4rem;
-    top: 0rem;
-
-    width: 2rem;
-    height: 2rem;
-
-    border-radius: .4rem;
-    outline: 1px solid var(--primary-color);
-    background: var(--primary-color);
-} */
-
 form .forgot-remember a {
     text-decoration: none;
     font-size: 1.4rem;
@@ -274,6 +225,7 @@ form .forgot-remember a {
 
     background: var(--primary-color);
     text-transform: uppercase;
+    color: var(--submit-color);
 
     font-weight: 600;
     font-size: 1.8rem;
