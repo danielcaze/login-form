@@ -25,16 +25,25 @@ body {
     background-color: var(--background);
 }
 
-html,
-body {
-    width: 100%;
-    height: 100%;
-}
 
 .wrapper {
-    width: min(37.5rem, 100%);
+    display: flex;
+    justify-content: center;
     padding-inline: 2rem;
-    margin-inline: auto;
+}
+
+.imagem { 
+    flex: 1;
+    height: 100vh;
+    background-image: url(./assets/side-image.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: none;
+}
+
+.formulario {
+    max-width: 57.2rem;
 }
 
 /* HEADER */
@@ -162,6 +171,7 @@ form svg path {
 .remember label {
     font-family: "Roboto", sans-serif;
     cursor: pointer;
+    width: 9rem;
 }
 
 #rememberChk + label::after {
@@ -231,7 +241,7 @@ form .forgot-remember a {
     font-size: 1.8rem;
 }
 
-.wrapper > a {
+.register {
     display: block;
 
     width: 100%;
@@ -242,4 +252,37 @@ form .forgot-remember a {
 
     font-size: 1.4rem;
     color: var(--primary-color);
+}
+
+@media (min-width: 1440px) {
+
+    .imagem {
+        display: block;
+    }
+
+    .wrapper {
+        padding: 0;
+    }
+
+    .formulario {
+        border-radius: .4rem;
+        background: var(--form-background);
+        padding: 5.5rem 11.9rem;
+        max-height: fit-content;
+    }
+
+    #logo {
+        position: absolute;
+        top: 0;
+        left: 4rem;
+    }
+
+    .form-area {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    
 }
