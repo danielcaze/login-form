@@ -27,6 +27,7 @@ body {
 
 
 .wrapper {
+    position: relative;
     display: flex;
     justify-content: center;
     padding-inline: 2rem;
@@ -102,6 +103,7 @@ input:focus {
 
 input:focus + svg * {
     stroke: var(--primary-color);
+    transition: all .3s ease;
 }
 
 input::placeholder {
@@ -254,11 +256,9 @@ form .forgot-remember a {
     color: var(--primary-color);
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1200px) {
 
-    .imagem {
-        display: block;
-    }
+    
 
     .wrapper {
         padding: 0;
@@ -284,5 +284,11 @@ form .forgot-remember a {
         align-items: center;
     }
 
-    
+    .login {
+        margin-top: 0;
+    }
+
+    .imagem {
+        display: block;
+    }
 }
